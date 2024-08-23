@@ -66,13 +66,15 @@ const NewsPage = () => {
                 next wave of industrial automation.
               </p>
               <p className=" text-mutedText line-clamp-4"></p>
-              <iframe
-                src="https://videoad.vercel.app"
-                className="w-full h-[700px] object-cover"
-              />
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center">
+        <iframe
+          src="https://videoad.vercel.app"
+          className="w-full h-[700px] object-cover"
+        />
       </div>
     </div>
   );
