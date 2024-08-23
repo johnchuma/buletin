@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className=" w-11/12 2xl:w-8/12 mx-auto">
       <div className=" fixed bottom-0 right-0 left-0 z-50   flex flex-col justify-end">
-        <iframe  src="https://selectionad.vercel.app" className="w-full" />
+        <iframe src="https://selectionad.vercel.app" className="w-full" />
       </div>
       <div className=" bg-lightBackground p-12 rounded-lg mt-8">
         <div className="w-6/12 text-center mx-auto space-y-2">
@@ -22,14 +22,12 @@ const HomePage = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-end ">
-        <iframe src="https://hoverads.vercel.app" className="w-full h-80" />
-      </div>
+
       <div
         onClick={() => {
-          navigate("/news/ahdkfja");
+          navigate("/news/audio");
         }}
-        className="grid grid-cols-12 gap-12 items-center mt-8  cursor-pointer"
+        className="grid grid-cols-12 gap-12 items-center mt-8   cursor-pointer"
       >
         <div className=" col-span-6 ">
           <img
@@ -77,6 +75,9 @@ const HomePage = () => {
           return (
             index < 4 && (
               <NewsItem
+                onClick={() => {
+                  navigate("/news/hover");
+                }}
                 image={item.image}
                 title={item.title}
                 description={item.description}
@@ -174,6 +175,9 @@ const HomePage = () => {
         <div className="grid grid-cols-12 mt-6 gap-6">
           <div className="col-span-3">
             <NewsItem
+              onClick={() => {
+                navigate("/news/video");
+              }}
               title={newsItems[2].title}
               image={newsItems[2].image}
               description={newsItems[2].description}
@@ -185,16 +189,21 @@ const HomePage = () => {
                 "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/12-10-2023-UNICEF-Ethiopia.jpg/image1170x530cropped.jpg"
               }
             />
-            <iframe src="https://audioad.vercel.app" className="w-full" />
           </div>
           <div className="col-span-3 space-y-4">
             <NewsItem
+              onClick={() => {
+                navigate("/news/video");
+              }}
               imageHeight={"h-24 w-full object-cover"}
               title={newsItems[1].title}
               image={newsItems[1].image}
               description={""}
             />
             <NewsItem
+              onClick={() => {
+                navigate("/news/video");
+              }}
               imageHeight={"h-24 w-full object-cover"}
               title={newsItems[3].title}
               image={newsItems[3].image}
@@ -202,6 +211,10 @@ const HomePage = () => {
             />
           </div>
         </div>
+        <div className="w-full flex justify-center">
+          <iframe src="https://audioad.vercel.app" className="w-full" />
+        </div>
+
         <div className="flex justify-between items-center mt-8 mb-4">
           <h1 className="text-3xl font-semibold">Editor's Pick</h1>
           <div className="flex space-x-2 text-primaryColor items-center text-sm">
@@ -220,6 +233,9 @@ const HomePage = () => {
             return (
               index < 4 && (
                 <NewsItem
+                onClick={() => {
+                    navigate("/news/hover");
+                  }}
                   image={item.image}
                   title={item.title}
                   description={item.description}
@@ -241,6 +257,9 @@ const HomePage = () => {
               index > 4 &&
               index < 9 && (
                 <NewsItem
+                onClick={() => {
+                    navigate("/news/audio");
+                  }}
                   image={item.image}
                   title={item.title}
                   description={item.description}

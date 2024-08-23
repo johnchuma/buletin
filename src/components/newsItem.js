@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
 
-const NewsItem = ({ title, description, image, imageHeight }) => {
+const NewsItem = ({ title, description, image, imageHeight, onClick }) => {
   const navigate = useNavigate();
   return (
     <div className=" cursor-pointer ">
       <div
         onClick={() => {
-          navigate("/news/adfa");
+          onClick();
         }}
         className=" space-y-1"
       >
