@@ -4,9 +4,9 @@ const HoverPage = () => {
   const news = newsItems[2];
   return (
     <div>
-      <div className=" w-7/12 2xl:w-5/12 mx-auto py-12">
+      <div className=" w-9/12 2xl:w-5/12 mx-auto py-12">
         <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-12">
+          <div className="col-span-8">
             <h1 className="text-4xl font-semibold font-serif">{news.title}</h1>
             <div className="flex space-x-1 mt-2 mb-4 items-center text-muted text-sm text-mutedText">
               <div>
@@ -67,6 +67,9 @@ const HoverPage = () => {
               </p>
               <p className=" text-mutedText line-clamp-4"></p>
             </div>
+          </div>
+          <div className="col-span-4">
+            <iframe src="https://sidead.vercel.app" className="w-full h-full" />
           </div>
         </div>
       </div>
