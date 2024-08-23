@@ -6,7 +6,7 @@ import { newsItems } from "../utils/constants";
 const HomePage = () => {
   return (
     <div className="w-8/12 mx-auto">
-      <div className="fixed z-50 inset-0  flex flex-col justify-end">
+      <div className=" fixed bottom-0 right-0 left-0 z-50   flex flex-col justify-end">
         <iframe src="https://selectionad.vercel.app" className="w-full" />
       </div>
       <div className=" bg-lightBackground p-12 rounded-lg mt-8">

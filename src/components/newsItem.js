@@ -1,7 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 const NewsItem = ({ title, description, image, imageHeight }) => {
+  const navigate = useNavigate();
   return (
-    <div>
-      <div className=" space-y-1">
+    <div className=" cursor-pointer">
+      <div
+        onClick={() => {
+          navigate("/news/adfa");
+        }}
+        className=" space-y-1"
+      >
         <img
           alt=""
           className={`rounded-xl ${imageHeight ?? "h-48 w-full object-cover"}`}

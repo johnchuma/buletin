@@ -1,13 +1,20 @@
 import { AiOutlineBell, AiOutlineNotification } from "react-icons/ai";
 import { BiSolidNotification } from "react-icons/bi";
 import { Bs0Circle } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="w-8/12 mx-auto py-3 flex items-center space-x-4 justify-between">
         <div className="flex space-x-4">
-          <h1 className="text-2xl text-primaryColor font-semibold font-serif">
+          <h1
+            onClick={() => {
+              navigate("/");
+            }}
+            className="text-2xl object-cover text-primaryColor font-semibold font-serif"
+          >
             Buletin
           </h1>
           <div className="flex space-x-2 items-center">
