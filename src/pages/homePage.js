@@ -23,7 +23,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="flex justify-end ">
-        <iframe src="https://hoverads.vercel.app/" className="w-full" />
+        <iframe src="https://hoverads.vercel.app" className="w-full h-96" />
       </div>
       <div
         onClick={() => {
@@ -95,32 +95,32 @@ const HomePage = () => {
       <div className="grid grid-cols-10 gap-12 mt-6">
         {[
           {
-            title: "Economics",
+            title: "Fast News",
             image:
               "https://media.istockphoto.com/id/1351440359/vector/megaphone-with-breaking-news-speech-bubble-banner-loudspeaker-label-for-business-marketing.jpg?s=612x612&w=0&k=20&c=o2Q3N327CD_YdTjXqQ5cP2MW7rNHWDRD33ZO7iFA9QE=",
           },
           {
-            title: "Economics",
+            title: "Daily News",
             image:
               "https://img.freepik.com/free-vector/gradient-breaking-news-logo-design_23-2151157248.jpg",
           },
           {
-            title: "Economics",
+            title: "Funypage",
             image:
               "https://ichef.bbci.co.uk/news/480/cpsprodpb/cef5/live/7e7c7680-609e-11ef-b970-9f202720b57a.jpg.webp",
           },
           {
-            title: "Economics",
+            title: "African Eye",
             image:
-              "https://www.euroschoolindia.com/wp-content/uploads/2023/10/short-story-that-have-moral-lesson-jpg.webp",
+              "https://www.caritas.org/wordpress/wp-content/uploads/2017/06/35219983156_2d65deec44_z.jpg",
           },
           {
-            title: "Economics",
+            title: "Water News",
             image:
-              "https://www.euroschoolindia.com/wp-content/uploads/2023/10/short-story-that-have-moral-lesson-jpg.webp",
+              "https://mavensnotebook.com/wp-content/uploads/2023/02/Header_Daily-2.jpg",
           },
           {
-            title: "Economics",
+            title: "Sit down",
             image:
               "https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w1920-q80/marquee/1042340/cen_sp_hero_landscape_0.jpg",
           },
@@ -130,27 +130,27 @@ const HomePage = () => {
               "https://www.euroschoolindia.com/wp-content/uploads/2023/10/short-story-that-have-moral-lesson-jpg.webp",
           },
           {
-            title: "Economics",
+            title: "Space",
             image:
-              "https://www.euroschoolindia.com/wp-content/uploads/2023/10/short-story-that-have-moral-lesson-jpg.webp",
+              "https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg",
           },
           {
-            title: "Economics",
+            title: "NBC",
             image:
               "https://i.ytimg.com/vi/qrMrwRAurBM/hq720_live.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAsrLLdpJj5qAlB9abDwkZexlbIJQ",
           },
           {
-            title: "Economics",
+            title: "BBC",
             image:
               "https://yt3.googleusercontent.com/ytc/AIdro_n-3q1GCZk-HxpvR8cGNj-guqNBNNrb2kgbqKwWsbZe6w=s900-c-k-c0x00ffffff-no-rj",
           },
         ].map((item) => {
           return (
             <div
-              key={item.title}
-              className="text-center flex flex-col items-center justify-center "
+              key={item.image}
+              className="text-center flex flex-col items-center justify-center space-y-1 "
             >
-              <div className="rounded-full size-24">
+              <div className="rounded-full size-20">
                 <img
                   alt=""
                   className="rounded-full size-full object-cover"
@@ -238,7 +238,8 @@ const HomePage = () => {
         <div className="grid grid-cols-4 gap-6 mt-4">
           {newsItems.map((item, index) => {
             return (
-              index < 4 && (
+              index > 4 &&
+              index < 9 && (
                 <NewsItem
                   image={item.image}
                   title={item.title}

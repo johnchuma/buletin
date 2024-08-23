@@ -68,7 +68,7 @@ const NewsPage = () => {
               <p className=" text-mutedText line-clamp-4"></p>
               <iframe
                 src="https://videoad.vercel.app"
-                className="w-full h-[600px] object-cover"
+                className="w-full h-[700px] object-cover"
               />
             </div>
           </div>
