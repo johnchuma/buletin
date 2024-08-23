@@ -4,7 +4,7 @@ const NewsPage = () => {
   const news = newsItems[0];
   return (
     <div>
-      <div className="w-5/12 mx-auto py-12">
+      <div className=" w-7/12 2xl:w-5/12 mx-auto py-12">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12">
             <h1 className="text-4xl font-semibold font-serif">{news.title}</h1>

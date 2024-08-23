@@ -7,9 +7,9 @@ import { useNavigate } from "react-router-dom";
 const HomePage = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-8/12 mx-auto">
+    <div className=" w-11/12 2xl:w-8/12 mx-auto">
       <div className=" fixed bottom-0 right-0 left-0 z-50   flex flex-col justify-end">
-        <iframe src="https://selectionad.vercel.app" className="w-full" />
+        <iframe  src="https://selectionad.vercel.app" className="w-full" />
       </div>
       <div className=" bg-lightBackground p-12 rounded-lg mt-8">
         <div className="w-6/12 text-center mx-auto space-y-2">

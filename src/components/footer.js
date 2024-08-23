@@ -3,7 +3,7 @@ import { FaLinkedin, FaSquareWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="w-8/12 mx-auto my-8 mb-48">
+    <div className="w-11/12 2xl:w-8/12 mx-auto my-8 mb-48">
       <div className="grid grid-cols-12 gap-12">
         <div className=" space-y-2 col-span-4">
           <h1 className="text-xl text-primaryColor font-semibold font-serif">

@@ -7,13 +7,13 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="w-8/12 mx-auto py-3 flex items-center space-x-4 justify-between">
+      <div className=" w-11/12 2xl:w-8/12  mx-auto py-3 flex items-center space-x-4 justify-between">
         <div className="flex space-x-4">
           <h1
             onClick={() => {
               navigate("/");
             }}
-            className="text-2xl object-cover text-primaryColor font-semibold font-serif"
+            className="text-2xl object-cover cursor-pointer text-primaryColor font-semibold font-serif"
           >
             Buletin
           </h1>
