@@ -25,10 +25,7 @@ const NewsPage = () => {
                 className={`rounded-xl h-96 ${" w-full object-cover"}`}
                 src={news.image}
               />
-              <iframe
-                src="https://videoad.vercel.app"
-                className="w-full h-auto object-cover"
-              />
+
               <p className=" text-mutedText line-clamp-4">
                 2024 is poised to be a landmark year in technological
                 innovation, with rapid advancements that promise to disrupt
@@ -69,6 +66,10 @@ const NewsPage = () => {
                 next wave of industrial automation.
               </p>
               <p className=" text-mutedText line-clamp-4"></p>
+              <iframe
+                src="https://videoad.vercel.app"
+                className="w-full h-[600px] object-cover"
+              />
             </div>
           </div>
         </div>

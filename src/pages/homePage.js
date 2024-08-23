@@ -2,8 +2,10 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import NewsItem from "../components/newsItem";
 import NewsItemOverlay from "../components/newsItemOverlay";
 import { newsItems } from "../utils/constants";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-8/12 mx-auto">
       <div className=" fixed bottom-0 right-0 left-0 z-50   flex flex-col justify-end">
@@ -23,7 +25,12 @@ const HomePage = () => {
       <div className="flex justify-end ">
         <iframe src="https://hoverads.vercel.app/" className="w-full" />
       </div>
-      <div className="grid grid-cols-12 gap-12 items-center mt-8">
+      <div
+        onClick={() => {
+          navigate("/news/ahdkfja");
+        }}
+        className="grid grid-cols-12 gap-12 items-center mt-8  cursor-pointer"
+      >
         <div className=" col-span-6 ">
           <img
             alt=""

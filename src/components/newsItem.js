@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const NewsItem = ({ title, description, image, imageHeight }) => {
   const navigate = useNavigate();
   return (
-    <div className=" cursor-pointer">
+    <div className=" cursor-pointer ">
       <div
         onClick={() => {
           navigate("/news/adfa");
