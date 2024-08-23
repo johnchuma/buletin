@@ -23,7 +23,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="flex justify-end ">
-        <iframe src="https://hoverads.vercel.app" className="w-full h-96" />
+        <iframe src="https://hoverads.vercel.app" className="w-full h-80" />
       </div>
       <div
         onClick={() => {
